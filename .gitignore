@@ -9,7 +9,6 @@ __pycache__/
 src/pad20251/static/json/*.json
 
 
-
 # Distribution / packaging
 .Python
 build/
