@@ -26,10 +26,10 @@ jobs:
         run: .\\venv\\Scripts\\activate
       
       - name: paso3 - actualizar pip
-        run: .\\venv\\Scripts\\activate && pip install --upgrade pip
+        run: .\\venv\\Scripts\\activate && pip install --upgrade pip --user
       
       - name: paso4 - instalar dependencias
-        run: .\\venv\\Scripts\\activate && pip install -r requirements.txt
+        run: .\\venv\\Scripts\\activate && pip install -r requirements.txt --user
 
       - name: paso5 - Ejecutar actividad_1
         run: .\\venv\\Scripts\\activate && python src/pad20251/actividad_1.py
@@ -44,3 +44,5 @@ jobs:
           commit_user_name: Luis de la Ossa [GitHub Actions]
           commit_user_email: fernando.delaossa@est.iudigital.edu.co
           commit_author: Luis de la Ossa <fernando.delaossa@est.iudigital.edu.co>
+
+          
