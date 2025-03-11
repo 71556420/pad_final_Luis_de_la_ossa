@@ -23,19 +23,29 @@ jobs:
         run: python -m venv venv
 
       - name: paso2 - activar entorno virtual
-        run: .\\venv\\Scripts\\activate
-      
+        shell: bash
+        run: |
+          .\\venv\\Scripts\\activate
+
       - name: paso3 - actualizar pip
-        run: .\\venv\\Scripts\\activate && pip install --upgrade pip --user
+        shell: bash
+        run: |
+          .\\venv\\Scripts\\activate && python -m pip install --upgrade pip
       
       - name: paso4 - instalar dependencias
-        run: .\\venv\\Scripts\\activate && pip install -r requirements.txt --user
+        shell: bash
+        run: |
+          .\\venv\\Scripts\\activate && pip install -r requirements.txt
 
       - name: paso5 - Ejecutar actividad_1
-        run: .\\venv\\Scripts\\activate && python src/pad20251/actividad_1.py
+        shell: bash
+        run: |
+          .\\venv\\Scripts\\activate && python src/pad20251/actividad_1.py
 
       - name: paso6 - Ejecutar actividad_2
-        run: .\\venv\\Scripts\\activate && python src/pad20251/static/actividad_2.py
+        shell: bash
+        run: |
+          .\\venv\\Scripts\\activate && python src/pad20251/static/actividad_2.py
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -44,5 +54,3 @@ jobs:
           commit_user_name: Luis de la Ossa [GitHub Actions]
           commit_user_email: fernando.delaossa@est.iudigital.edu.co
           commit_author: Luis de la Ossa <fernando.delaossa@est.iudigital.edu.co>
-
-          
