@@ -1,11 +1,13 @@
 [
     {
         "title": "Black Coffee",
-        "description": "Svart kaffe är så enkelt som det kan bli med malda kaffebönor dränkta i hett vatten, serverat varmt. Och om du vill låta fancy kan du kalla svart kaffe med sitt rätta namn: café noir.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Coffee"
+            "Coffee",
+            "Water"
         ],
         "image": "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": 500,
         "id": 1
     },
     {
@@ -145,18 +147,6 @@
         "id": 14
     },
     {
-        "title": "Islatte Mocha",
-        "description": "Iced latte Mocha är en kombination av latte och mocha, som i sig är en kombination av choklad och kaffe. Den ger kalla dryckälskare en läcker upplevelse av choklad och kaffe.",
-        "ingredients": [
-            "Espresso",
-            "Is",
-            "Mjölk",
-            "Choklad "
-        ],
-        "image": "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGljZWQlMjBtb2NoYSUyMGxhdHRlfGVufDB8fDB8fHww",
-        "id": 15
-    },
-    {
         "title": "Frapino Caramel",
         "description": "Det är en blandad eller bättre sagt skakad kaffe med vispad grädde på toppen. Ett måste för varma sommardagar.",
         "ingredients": [
@@ -184,16 +174,6 @@
         "id": 17
     },
     {
-        "title": "Apelsinjuice",
-        "description": "Vi har inget att säga om vår nypressade apelsinjuice. Du måste prova den själv.",
-        "ingredients": [
-            "Färska Apelsiner",
-            "Is"
-        ],
-        "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww",
-        "id": 18
-    },
-    {
         "title": "Frozen Lemonade",
         "description": "Frozen lemonade är en uppfriskande sommardryck som kombinerar färskpressad citronsaft, is och sötning till en svalkande, syrlig och sötsyrlig smaksensation.",
         "ingredients": [
@@ -216,52 +196,24 @@
         "id": 20
     },
     {
-        "title": "Bạc xỉu",
-        "description": "This is a Bạc xỉu",
-        "ingredients": [
-            "Coffee",
-            "Milk"
-        ],
-        "image": "https://images.squarespace-cdn.com/content/v1/56cf7cfb0442626af6cd8f70/e7395cde-c0a3-4500-a2df-d8aea73aae63/IMG_0565.jpg",
-        "price": 150000,
-        "id": 21
+        "title": "Honey Coffee",
+        "description": "Adding honey to coffee is more than just a trend—it’s a flavorful and nutritious way to elevate your daily brew. Honey is known for its natural sweetness, antioxidants, and minerals, making it a versatile substitute for refined sugar or artificial sweeteners",
+        "ingredients": "honey",
+        "image": "https://www.smileyhoney.com/cdn/shop/articles/can-you-put-honey-in-coffee_625x.jpg",
+        "id": "27"
     },
     {
-        "title": "Bạc xỉu 123",
-        "description": "This is a Bạc xỉu",
-        "ingredients": [
-            "Coffee",
-            "Milk"
-        ],
-        "image": "https://images.squarespace-cdn.com/content/v1/56cf7cfb0442626af6cd8f70/e7395cde-c0a3-4500-a2df-d8aea73aae63/IMG_0565.jpg",
-        "id": 22
+        "title": "Pinneaple Coffee",
+        "description": "Of course I could have just eaten it throughout the week. But then I got this idea in my head that some kind of pineapple-flavored latte could be really fun. So I decided to play around with making a syrup for that, and here’s what I came up with.",
+        "ingredients": "pinneaple",
+        "image": "https://abeautifulmess.com/wp-content/uploads/typekit/.a/6a00d8358081ff69e201bb08b0073b970d-800wi",
+        "id": "28"
     },
     {
-        "title": "David",
-        "ingredients": "dsasdffs",
-        "description": "asfdds",
-        "image": "https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=",
-        "id": 23
-    },
-    {
-        "title": "David",
-        "ingredients": "dsasdffs",
-        "description": "asfdds",
-        "image": "https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=",
-        "id": 24
-    },
-    {
-        "title": "David",
-        "ingredients": "dsasdffs",
-        "description": "asfdds",
-        "image": "https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=",
-        "id": 25
-    },
-    {
-        "title": "David",
-        "ingredients": "dsasdffs",
-        "description": "asdfsd",
-        "image": "https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=",
-        "id": 26
+        "title": "Aceh Gayo Coffee",
+        "description": "Gayo coffee is an Arabica coffee originating from the Gayo highlands, Central Aceh. This coffee is one of Indonesia's leading commodities and is one of the most expensive coffees in the world.",
+        "ingredients": "Coffee",
+        "image": "https://coldcrafters.com/cdn/shop/products/PHOTO-2022-10-21-15-51-56.jpg",
+        "id": "30"
     }
 ]
