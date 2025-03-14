@@ -172,11 +172,19 @@ plt.close()
 # Guardar los resultados en un nuevo archivo Excel
 filename = 'resultados_actividad_11_a_16.xlsx'
 
+# Guardar los resultados en un nuevo archivo Excel
+filename = 'resultados_actividad_11_a_16.xlsx'
+
 with pd.ExcelWriter(filename, engine='openpyxl') as writer:
     # Guardar los arrays generados en el archivo Excel
     pd.DataFrame({'x_random': x_rand, 'y_random': y_rand}).to_excel(writer, sheet_name='Dispersión Aleatoria', index=False)
     pd.DataFrame({'x': x, 'y': y}).to_excel(writer, sheet_name='Dispersión con Ruido', index=False)
-    pd.DataFrame({'x': x_vals, 'y': y_vals, 'z': Z.flatten()}).to_excel(writer, sheet_name='Contorno Z', index=False)
+
+    # Corregido: Crear un DataFrame con todos los puntos de la cuadrícula
+    data = {'x': X.flatten(), 'y': Y.flatten(), 'z': Z.flatten()}
+    df_contour = pd.DataFrame(data)
+    df_contour.to_excel(writer, sheet_name='Contorno Z', index=False)
+
     pd.DataFrame({'x': x_points, 'y': y_points}).to_excel(writer, sheet_name='Dispersión Densidad', index=False)
 
 print("Los resultados y los gráficos se han guardado en los archivos correspondientes.")
