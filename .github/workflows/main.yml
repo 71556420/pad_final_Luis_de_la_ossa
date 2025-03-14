@@ -38,7 +38,7 @@ jobs:
       - name: Run actividad_2
         shell: bash
         run: |
-          source venv/Scripts/activate && python src/pad20251/static/actividad_2.py
+          source venv/Scripts/activate && python src/pad20251/actividad_2.py
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
