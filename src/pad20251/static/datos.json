@@ -12,23 +12,24 @@
     },
     {
         "title": "Latte",
-        "description": "Som den mest populära kaffedrycken där ute består latte av en skvätt espresso och ångad mjölk med bara en gnutta skum. Den kan beställas utan smak eller med smak av allt från vanilj till pumpa kryddor.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Espresso",
-            "Ångad mjölk"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhdHRlfGVufDB8fDB8fHww",
+        "image": "https://i.imgur.com/L3r6o58.jpeg",
+        "price": 500,
         "id": 2
     },
     {
         "title": "Caramel Latte",
-        "description": "Om du gillar latte med en speciell smak kan karamell latte vara det bästa alternativet för att ge dig en upplevelse av den naturliga sötman och krämigheten hos ångad mjölk och karamell.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Espresso",
-            "Ångad mjölk",
-            "Karamellsirap"
+            "Coffee",
+            "Water"
         ],
         "image": "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": 500,
         "id": 3
     },
     {
@@ -62,77 +63,59 @@
         "id": 6
     },
     {
-        "title": "Macchiato",
-        "description": "Macchiaton är en annan espresso-baserad dryck som har en liten mängd skum på toppen. Det är det glada mellanrummet mellan en cappuccino och en doppio.",
+        "title": "Machiatto",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Espresso",
-            "Foam"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1557772611-722dabe20327?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://images.pexels.com/photos/5097056/pexels-photo-5097056.jpeg",
+        "price": 500,
         "id": 7
     },
     {
         "title": "Mocha",
-        "description": "För alla chokladälskare där ute kommer ni att bli förälskade i en mocha. Mocha är en choklad-espressodryck med ångad mjölk och skum.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Espresso",
-            "Ångad mjölk",
-            "Choklad"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1607260550778-aa9d29444ce1?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://images.pexels.com/photos/15021332/pexels-photo-15021332/free-photo-of-black-coffee-in-cup-in-cozy-decor.jpeg",
+        "price": 500,
         "id": 8
     },
     {
         "title": "Hot Chocolate",
-        "description": "Under kalla vinterdagar får en kopp varm choklad dig att känna dig bekväm och lycklig. Den får dig också att må bra eftersom den innehåller energigivande koffein.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Choklad",
-            "Mjölk"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMGNob2NvbGF0ZXxlbnwwfHwwfHx8MA%3D%3D",
+        "image": "https://images.pexels.com/photos/6119123/pexels-photo-6119123.jpeg",
+        "price": 500,
         "id": 9
     },
     {
         "title": "Chai Latte",
-        "description": "Om du letar efter en smakfull varm dryck mitt i vintern, välj chai latte. Kombinationen av kardemumma och kanel ger en underbar smak.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Te",
-            "Mjölk",
-            "Ingefära",
-            "Kardemumma",
-            "Kanel"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1578899952107-9c390f1af1b7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoYWklMjBsYXR0ZXxlbnwwfHwwfHx8MA%3D%3D",
+        "image": "https://www.teaheritage.fr/cdn/shop/articles/fbfd23eb1812c26fe623eebd7b4a5249.jpg?v=1674638932",
+        "price": 500,
         "id": 10
     },
     {
         "title": "Matcha Latte",
-        "description": "Matcha latte är en grön, hälsosam kaffedryck med finkrossad matcha-te och mjölk, erbjuder mild sötma, en unik smak och en mild koffeinkick.",
+        "description": "Roasted beans with hot water. An irresistable aroma that is often paired with the morning.",
         "ingredients": [
-            "Matcha-pulver",
-            "Mjölk",
-            "Socker*"
+            "Coffee",
+            "Water"
         ],
-        "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWF0Y2hhJTIwbGF0dGV8ZW58MHx8MHx8fDA%3D",
+        "image": "https://images.pexels.com/photos/28704749/pexels-photo-28704749/free-photo-of-cozy-matcha-latte-with-autumn-decor-on-rustic-table.jpeg",
+        "price": 500,
         "id": 11
-    },
-    {
-        "title": "Seasonal Brew",
-        "description": "Säsongs kaffe med olika smaktoner som karamell, frukt och choklad",
-        "ingredients": [
-            "Kaffe"
-        ],
-        "image": "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxibGFjayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
-        "id": 12
-    },
-    {
-        "title": "Svart Te",
-        "description": "Svart te föddes i Kina. Det är tillverkat av blad från en växt som kallas Camellia och kan smaksättas olika med frukter till exempel. En trevlig, varm, smakfull och aromatisk dryck som passar till vardagen.",
-        "ingredients": [
-            "Te"
-        ],
-        "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
-        "id": 13
     },
     {
         "title": "Islatte",
@@ -159,61 +142,5 @@
         ],
         "image": "https://images.unsplash.com/photo-1662047102608-a6f2e492411f?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMGNhcmFtZWx8ZW58MHx8MHx8fDA%3D",
         "id": 16
-    },
-    {
-        "title": "Frapino Mocka",
-        "description": "Ännu en berömd och utsökt kall dryck för dem som föredrar choklad. Tänk dig smaken av en shake med choklad och vispad grädde på toppen.",
-        "ingredients": [
-            "Coffee",
-            "Is",
-            "Mjölk",
-            "Cocoa",
-            "Vispgrädde*"
-        ],
-        "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMG1vY2hhfGVufDB8fDB8fHww",
-        "id": 17
-    },
-    {
-        "title": "Frozen Lemonade",
-        "description": "Frozen lemonade är en uppfriskande sommardryck som kombinerar färskpressad citronsaft, is och sötning till en svalkande, syrlig och sötsyrlig smaksensation.",
-        "ingredients": [
-            "Citronsaft",
-            "Is",
-            "Socker*"
-        ],
-        "image": "https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlbW9uYWRlJTIwd2l0aCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D",
-        "id": 19
-    },
-    {
-        "title": "Lemonad",
-        "description": "Var känd i Paris först och blev sedan mycket populär i hela Europa. Denna söta, färglösa, kolsyrade dryck görs genom att blanda citronsaft och kolsyrat vatten.",
-        "ingredients": [
-            "Citronsaft",
-            "Kolsyrat vatten",
-            "Honung"
-        ],
-        "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb25hZGV8ZW58MHx8MHx8fDA%3D",
-        "id": 20
-    },
-    {
-        "title": "Honey Coffee",
-        "description": "Adding honey to coffee is more than just a trend—it’s a flavorful and nutritious way to elevate your daily brew. Honey is known for its natural sweetness, antioxidants, and minerals, making it a versatile substitute for refined sugar or artificial sweeteners",
-        "ingredients": "honey",
-        "image": "https://www.smileyhoney.com/cdn/shop/articles/can-you-put-honey-in-coffee_625x.jpg",
-        "id": "27"
-    },
-    {
-        "title": "Pinneaple Coffee",
-        "description": "Of course I could have just eaten it throughout the week. But then I got this idea in my head that some kind of pineapple-flavored latte could be really fun. So I decided to play around with making a syrup for that, and here’s what I came up with.",
-        "ingredients": "pinneaple",
-        "image": "https://abeautifulmess.com/wp-content/uploads/typekit/.a/6a00d8358081ff69e201bb08b0073b970d-800wi",
-        "id": "28"
-    },
-    {
-        "title": "Aceh Gayo Coffee",
-        "description": "Gayo coffee is an Arabica coffee originating from the Gayo highlands, Central Aceh. This coffee is one of Indonesia's leading commodities and is one of the most expensive coffees in the world.",
-        "ingredients": "Coffee",
-        "image": "https://coldcrafters.com/cdn/shop/products/PHOTO-2022-10-21-15-51-56.jpg",
-        "id": "30"
     }
 ]
