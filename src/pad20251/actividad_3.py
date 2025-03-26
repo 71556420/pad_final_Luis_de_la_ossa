@@ -1,5 +1,4 @@
 import pandas as pd
-import kaggle
 import os
 
 def crear_dataframe_frutas():
