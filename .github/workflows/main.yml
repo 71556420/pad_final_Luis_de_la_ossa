@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Cambié a ubuntu-latest, es más común para Python
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9.2'
+          python-version: '3.10'  # Cambiado a 3.10
 
       - name: Create virtual environment
         run: python -m venv venv
@@ -25,10 +25,10 @@ jobs:
       - name: Activate virtual environment & install dependencies
         shell: bash
         run: |
-          source venv/bin/activate  # Cambié a venv/bin/activate para Ubuntu
+          source venv/bin/activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install requests  # Asegura que 'requests' esté instalado
+          pip install requests
 
       - name: Run actividad_1
         shell: bash
@@ -45,7 +45,7 @@ jobs:
         run: |
           source venv/bin/activate && python src/pad20251/actividad_3.py
 
-      - name: Run proyecto_integrador  # Agregado este paso
+      - name: Run proyecto_integrador
         shell: bash
         run: |
           source venv/bin/activate && python src/pad20251/proyecto_integrador.py
