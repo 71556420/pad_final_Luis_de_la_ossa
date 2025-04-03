@@ -17,7 +17,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'  # Cambiado a 3.10
+          python-version: '3.10'
 
       - name: Create virtual environment
         run: python -m venv venv
@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install requests
+          pip install requests jupyter  # Se añade Jupyter
 
       - name: Run actividad_1
         shell: bash
@@ -48,8 +48,9 @@ jobs:
       - name: Run proyecto_integrador
         shell: bash
         run: |
-          source venv/bin/activate && python src/pad20251/proyecto_integrador.ipynb
-          # Convert notebook to script if needed
+          source venv/bin/activate
+          jupyter nbconvert --to notebook --execute src/pad20251/proyecto_integrador.ipynb --output proyecto_integrador_executed.ipynb
+
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
