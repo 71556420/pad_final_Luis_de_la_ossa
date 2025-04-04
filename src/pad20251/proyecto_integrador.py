@@ -70,33 +70,57 @@ if df is not None:
         if col in df.columns:
             df[col] = df[col].replace('[\$,]', '', regex=True).astype(float)
 
-    # 5. Visualización de datos
-    # Histograma de ingresos mundiales
-    if 'worldwide_box_office' in df.columns:
-        plt.figure(figsize=(10, 6))
-        sns.histplot(df['worldwide_box_office'], bins=20, kde=True)
-        plt.title("Distribución de ingresos mundiales en taquilla del MCU")
-        plt.xlabel("Ingresos en dólares")
-        plt.ylabel("Frecuencia")
-        plt.show()
+    ## 5. Visualización de datos
 
-        # Tendencia de ingresos por fecha de estreno
-        plt.figure(figsize=(12, 6))
-        sns.lineplot(x='release_date', y='worldwide_box_office', data=df, marker='o')
-        plt.xticks(rotation=45)
-        plt.title("Tendencia de ingresos en taquilla por fecha de estreno")
-        plt.xlabel("Fecha de estreno")
-        plt.ylabel("Ingresos en dólares")
-        plt.show()
+# Identificar columna de ingresos
+known_possible_columns = [
+    'worldwide_box_office'
+]
+matching_col = None
+for candidate in known_possible_columns:
+    for col in df.columns:
+        if candidate.lower() == col.lower():
+            matching_col = col
+            break
+    if matching_col:
+        break
 
-        # Top 10 películas con mayores ingresos
-        top_10 = df.nlargest(10, 'worldwide_box_office')
-        plt.figure(figsize=(12, 6))
-        sns.barplot(x='worldwide_box_office', y='movie_title', data=top_10, palette='viridis')
-        plt.title("Top 10 películas con mayores ingresos en taquilla")
-        plt.xlabel("Ingresos en dólares")
-        plt.ylabel("Película")
-        plt.show()
+if matching_col:
+    print(f"Se utilizará la columna '{matching_col}' para los gráficos.")
+
+    # Convertir columna de ingresos a numérica si es necesario
+    df[matching_col] = pd.to_numeric(df[matching_col], errors='coerce')
+
+    # Eliminar filas con valores nulos en 'worldwide_box_office' o 'movie_title'
+    df = df.dropna(subset=[matching_col, 'movie_title'])
+
+    # Gráfico de distribución de ingresos
+    plt.figure(figsize=(10, 6))
+    sns.histplot(df[matching_col], bins=20, kde=True)
+    plt.title("Distribución de ingresos en taquilla del MCU")
+    plt.xlabel("Ingresos en dólares")
+    plt.ylabel("Frecuencia")
+    plt.show()
+
+    # Gráfico de tendencia de ingresos por fecha de estreno
+    plt.figure(figsize=(12, 6))
+    sns.lineplot(x='release_date', y=matching_col, data=df, marker='o')
+    plt.xticks(rotation=45)
+    plt.title("Tendencia de ingresos en taquilla por fecha de estreno")
+    plt.xlabel("Fecha de estreno")
+    plt.ylabel("Ingresos en dólares")
+    plt.show()
+
+    # Gráfico de las 10 películas con mayores ingresos en taquilla
+    top_10 = df.sort_values(by=matching_col, ascending=False).head(10)
+    plt.figure(figsize=(12, 6))
+    sns.barplot(x='worldwide_box_office', y='movie_title', data=top_10, hue='movie_title', palette='viridis', legend=False)
+    plt.title("Top 10 películas con mayores ingresos en taquilla")
+    plt.xlabel("Ingresos en dólares")
+    plt.ylabel("Película")
+    plt.show()
+else:
+    print("ERROR: No se encontró una columna válida para los ingresos en taquilla.")
 
     # 6. Matriz de correlación
     plt.figure(figsize=(10, 6))
